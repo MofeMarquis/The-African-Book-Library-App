@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Book Library</string>
+    <string name="book_name">Book Name</string>
+    <string name="author">Author:</string>
+    <string name="mofe">Mofe</string>
+    <string name="short_description">Short Description</string>
+    <string name="book_image">book image</string>
+    <string name="up_arrow_to_close_expanded_view">up arrow to close expanded view</string>
+    <string name="down_arrow_to_expand_view">down arrow to expand view</string>
+
+    <string name="bookAuthorText">Author:</string>
+    <string name="long_description">Description:</string>
+    <string name="bookPagesText">Pages:</string>
+    <string name="AuthorName">George R. Martin</string>
+    <string name="currently_reading">Currently Reading</string>
+    <string name="already_read">Already Read</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="BOOK_NAME">Book Name:</string>
+    <string name="game_of_thrones">Game of Thrones</string>
+    <string name="_3000">3000</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="all_books">All Books</string>
+    <string name="next_books">Already Read</string>
+    <string name="currently_reading_book">Currently Reading</string>
+    <string name="add_to_wishlist">Add to Wishlist</string>
+    <string name="year_of_publication">Year of Publication:</string>
+    <string name="overview">Overview</string>
+</resources>

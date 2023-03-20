@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentCardView"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@color/dark_grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentRelativeLayout"
+        android:background="@color/dark_grey">
+
+
+        <RelativeLayout
+            android:id="@+id/collapsedRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey">
+
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:contentDescription="@string/book_image"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookImage"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:lines="2"
+                android:text="@string/book_name"
+                android:textColor="@color/light_light_grey"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/downArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookImage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/down_arrow_to_expand_view"
+                android:src="@drawable/ic_down_arrows">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandedRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelativeLayout"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/authorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/authorText"
+                android:text="@string/mofe"
+                android:textColor="@color/light_light_grey">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/shortDescriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/authorName"
+                android:layout_marginTop="7dp"
+                android:text="@string/short_description"
+                android:textColor="@color/light_light_grey">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/upArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shortDescriptionText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_up_arrows">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shortDescriptionText"
+                android:layout_alignBottom="@+id/upArrow"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/upArrow"
+                android:text="Delete"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
